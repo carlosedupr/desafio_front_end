@@ -1,0 +1,19 @@
+body{
+    font-size: .9em;
+  }
+
+  input[type='text'], select, input[type='datetime-local']{
+    height: 25px;
+  }
+
+  .error{
+    border: 1px solid red;
+  }
+
+  .oculto{
+    display: none;
+  }
+
+  .mensagem_erro{
+    color:red;
+  }

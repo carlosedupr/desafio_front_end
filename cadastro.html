@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="js/funcoes.js" ></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/cadastro.css" rel="stylesheet">
+  <title>Cadastro de itens</title>
+
+</head>
+<body>
+  <div class="container">
+    <form id="cadastro">
+      <fieldset>
+        <legend class="alteracao">Cadastro</legend>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Nome do item</label>
+          <input type="text" name="nomeItem" id="nomeItem">
+          <div id="nomeItem_erro" class="oculto mensagem_erro"></div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Unidade de medida</label>
+          <select id="unidadeMedida">
+            <option value="0">Selecione...</option>
+            <option value="1">Quilograma</option>
+            <option value="2">Litro</option>
+            <option value="3">Unidade</option>
+          </select>
+          <div id="unidadeMedida_erro" class="oculto mensagem_erro"></div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Quantidade</label>
+          <input type="text" name="quantidade" id = "quantidade">
+          <div id="quantidade_erro" class="oculto mensagem-erro"></div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Preço</label>
+          <input type="text" name="preco" id="preco">
+          <div id="preco_erro" class="oculto mensagem_erro"></div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Produto precível</label>
+          <input type="checkbox" name="produtoPerecivel" id="produtoPerecivel">
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Data de validade</label>
+          <input type="date" name="dataValidade" id="dataValidade">
+          <div id="dataValidade_erro" class="oculto"></div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-4 col-form-label">Data de fabricação</label>
+          <input type="date" name="dataFabricacao" id="dataValidade">
+          <div id="datFabricacao_erro" class="oculto"></div>
+        </div>
+      </fieldset>
+
+      <div>
+        <input type="submit" class="btn btn-primary" name="salvar" id="salvar">
+        <button name="cancelar" class="btn btn-danger" id="cancelar">Cancelar</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

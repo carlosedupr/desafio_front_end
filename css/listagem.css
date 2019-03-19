@@ -1,0 +1,20 @@
+table{
+    width: 100%;
+}
+table th, table td{
+    padding-left: 5px; 
+}
+
+table th{
+  font-size: .8em;
+  padding-bottom: 5px;
+}
+
+table thead th{
+    color: #3f8abf;
+    border-bottom: 1px solid #76c4f1;
+}
+
+.alt{
+    background-color:#dbf0f9;
+}
